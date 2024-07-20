@@ -1,6 +1,8 @@
 [![NuGet Version and Downloads count](https://buildstats.info/nuget/TJC.VersionExtensions)](https://www.nuget.org/packages/TJC.VersionExtensions)
 
-## [Version](https://learn.microsoft.com/en-us/dotnet/api/system.version).[Increment](./TJC.VersionExtensions/IncrementVersionExtensions.cs)([VersionComponents](./TJC.VersionExtensions/Enums/VersionComponents.cs) component)
+# Increments
+
+## [Version](https://learn.microsoft.com/en-us/dotnet/api/system.version).[Increment](./TJC.VersionExtensions/IncrementVersionExtensions.cs)([VersionComponents](./TJC.VersionExtensions/Enums/VersionComponents.cs))
 - Returns a new [Version](https://learn.microsoft.com/en-us/dotnet/api/system.version) with the specified [component](./TJC.VersionExtensions/Enums/VersionComponents.cs) **incremented by 1**, and the *following* components **reset to 0**
 
 ## [Version](https://learn.microsoft.com/en-us/dotnet/api/system.version).[IncrementMajor()](./TJC.VersionExtensions/IncrementVersionExtensions.cs)
@@ -33,4 +35,28 @@ var incrementedVersion = version.IncrementBuild();
 var version = new Version(1, 2, 3, 4);
 var incrementedVersion = version.IncrementRevision();
 // incrementedVersion == new Version(1, 2, 3, 5)
+```
+
+---
+
+# Comparisons
+
+## [Version](https://learn.microsoft.com/en-us/dotnet/api/system.version).[Equivalent](./TJC.VersionExtensions/EquivalentVersionExtensions.cs)([Version](https://learn.microsoft.com/en-us/dotnet/api/system.version))
+- Returns `true` if the components are equivalent (if *undefined*, they are considered equivalent to `0`), `false` otherwise
+```c#
+var version = new Version(1, 0, 0, 0);
+var other = new Version(1);
+var result = version.Equivalent(other);
+// result == true
+```
+
+## [Version](https://learn.microsoft.com/en-us/dotnet/api/system.version).[IsZero()](./TJC.VersionExtensions/EquivalentVersionExtensions.cs)
+- Returns `true` if the components are equivalent (if *undefined*, they are considered equivalent to `0`), `false` otherwise
+```c#
+var zero = new Version(0, 0, 0, 0);
+var undefined = new Version();
+var result1 = zero.IsZero();
+var result2 = undefined.IsZero();
+// result1 == true
+// result2 == true
 ```
