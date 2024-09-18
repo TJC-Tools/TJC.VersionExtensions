@@ -1,4 +1,6 @@
-[![NuGet Version and Downloads count](https://buildstats.info/nuget/TJC.VersionExtensions)](https://www.nuget.org/packages/TJC.VersionExtensions)
+![GitHub Tag](https://img.shields.io/github/v/tag/TJC-Tools/TJC.VersionExtensions) ![NuGet Version](https://img.shields.io/nuget/v/TJC.VersionExtensions)
+
+![NuGet Downloads](https://img.shields.io/nuget/dt/TJC.VersionExtensions) ![Size](https://img.shields.io/github/repo-size/TJC-Tools/TJC.VersionExtensions) ![License](https://img.shields.io/github/license/TJC-Tools/TJC.VersionExtensions.svg)
 
 ## Table of Contents
 - [Increments](#increments)
