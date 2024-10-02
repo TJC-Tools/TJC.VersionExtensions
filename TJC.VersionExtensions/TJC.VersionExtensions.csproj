@@ -33,7 +33,7 @@
   </ItemGroup>
   <!-- DEPENDENCIES -->
   <ItemGroup>
-    <PackageReference Include="TJC.Singleton" Version="0.1.4" />
+    <PackageReference Include="TJC.Singleton" Version="0.1.9" />
   </ItemGroup>
   <!-- TESTS -->
   <ItemGroup>
