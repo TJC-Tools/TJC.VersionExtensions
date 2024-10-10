@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2024-10-10
+
 ### Added
 
 - Changelog Automation
@@ -16,3 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Create many extensions
+
+[Unreleased]: https://github.com/TJC-Tools/TJC.VersionExtensions/compare/v0.2.0...HEAD
+
+[0.2.0]: https://github.com/TJC-Tools/TJC.VersionExtensions/compare/v0.1.7...v0.2.0
+
+[0.1.7]: https://github.com/TJC-Tools/TJC.VersionExtensions/releases/tag/v0.1.7
