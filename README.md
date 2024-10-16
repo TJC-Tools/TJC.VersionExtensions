@@ -22,7 +22,7 @@
 
 <br/>
 
-<a href="https://www.nuget.org/packages/TJC.VersionExtensions">
+<a href="https://github.com/TJC-Tools/TJC.VersionExtensions">
   <img alt="Last commit" src="https://img.shields.io/github/last-commit/TJC-Tools/TJC.VersionExtensions?style=for-the-badge&logo=git&logoColor=D9E0EE&labelColor=302D41&color=mediumpurple"/>
 </a>
 
