@@ -61,7 +61,7 @@ public class IncrementVersionExtensionsTests
         AssertVersion(newVersion, 1, 2, 3, 5);
     }
 
-    private void AssertVersion(Version version, int major, int minor, int build, int revision)
+    private static void AssertVersion(Version version, int major, int minor, int build, int revision)
     {
         Assert.AreEqual(major, version.Major);
         Assert.AreEqual(minor, version.Minor);

@@ -1,10 +1,9 @@
 ﻿namespace TJC.VersionExtensions.Tests;
 
-
 [TestClass]
 public class EquivalentVersionExtensionsTests
 {
-    #region Equivalent (True) 
+    #region Equivalent (True)
 
     [TestMethod]
     public void Equivalent_AllDefinedSame_ReturnsTrue()

@@ -9,7 +9,10 @@ public static class IncrementVersionExtensions
     /// <param name="component">Incrementation Type (default: <seealso cref="VersionComponents.Build"/></param>
     /// <returns></returns>
     /// <exception cref="Exception"></exception>
-    public static Version Increment(this Version version, VersionComponents component = VersionComponents.Build)
+    public static Version Increment(
+        this Version version,
+        VersionComponents component = VersionComponents.Build
+    )
     {
         ArgumentNullException.ThrowIfNull(component, nameof(component));
         return component switch
@@ -18,7 +21,7 @@ public static class IncrementVersionExtensions
             VersionComponents.Minor => version.IncrementMinor(),
             VersionComponents.Build => version.IncrementBuild(),
             VersionComponents.Revision => version.IncrementRevision(),
-            _ => throw new ArgumentOutOfRangeException(nameof(component), component, null)
+            _ => throw new ArgumentOutOfRangeException(nameof(component), component, null),
         };
     }
 
@@ -27,8 +30,7 @@ public static class IncrementVersionExtensions
     /// </summary>
     /// <param name="version"></param>
     /// <returns></returns>
-    public static Version IncrementMajor(this Version version) =>
-        new(version.Major + 1, 0, 0, 0);
+    public static Version IncrementMajor(this Version version) => new(version.Major + 1, 0, 0, 0);
 
     /// <summary>
     /// Increments the minor &amp; returns the new version.
