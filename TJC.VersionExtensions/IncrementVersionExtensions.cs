@@ -6,7 +6,7 @@ public static class IncrementVersionExtensions
     /// Increments the version build (a.k.a. patch), unless minor or major are specified instead.
     /// </summary>
     /// <param name="version">Version to Increment</param>
-    /// <param name="component">Incrementation Type (default: <seealso cref="VersionComponents.Build"/></param>
+    /// <param name="component">Increment Type (default: <seealso cref="VersionComponents.Build"/></param>
     /// <returns></returns>
     /// <exception cref="Exception"></exception>
     public static Version Increment(
