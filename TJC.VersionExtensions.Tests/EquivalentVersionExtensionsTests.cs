@@ -102,7 +102,6 @@ public class EquivalentVersionExtensionsTests
     #region Is Zero
 
 
-
     [TestMethod]
     public void IsZero_NoneDefined_ReturnsTrue()
     {
