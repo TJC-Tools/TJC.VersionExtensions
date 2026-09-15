@@ -61,6 +61,12 @@ public class IncrementVersionExtensionsTests
         AssertVersion(newVersion, 1, 2, 3, 5);
     }
 
+    [TestMethod]
+    public void Increment_UnsupportedComponent_ThrowsArgumentOutOfRangeException()
+    {
+        Assert.ThrowsException<ArgumentOutOfRangeException>(() => _version.Increment((VersionComponents)99));
+    }
+
     private static void AssertVersion(
         Version version,
         int major,

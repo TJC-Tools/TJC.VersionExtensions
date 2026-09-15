@@ -49,6 +49,17 @@ public class EquivalentVersionExtensionsTests
         Assert.IsTrue(result);
     }
 
+    [TestMethod]
+    public void Equivalent_UndefinedComponentOnSecondVersion_ReturnsTrue()
+    {
+        var version1 = new Version(1, 2, 0, 0);
+        var version2 = new Version(1, 2, 0);
+
+        var result = version1.Equivalent(version2);
+
+        Assert.IsTrue(result);
+    }
+
     #endregion
 
     #region Equivalent (False)
