@@ -1,6 +1,5 @@
 namespace TJC.VersionExtensions.Tests;
 
-
 public class EquivalentVersionExtensionsTests
 {
     #region Equivalent (True)

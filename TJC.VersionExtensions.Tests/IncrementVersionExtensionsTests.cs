@@ -1,6 +1,5 @@
 namespace TJC.VersionExtensions.Tests;
 
-
 public class IncrementVersionExtensionsTests
 {
     private readonly Version _version = new(1, 2, 3, 4);
