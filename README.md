@@ -4,10 +4,14 @@
 
 [![NuGet Downloads](https://img.shields.io/nuget/dt/TJC.VersionExtensions)](https://www.nuget.org/packages/TJC.VersionExtensions)
 ![Size](https://img.shields.io/github/repo-size/TJC-Tools/TJC.VersionExtensions)
+[![Scc Count Badge](https://sloc.xyz/github/TJC-Tools/TJC.VersionExtensions?category=code)](https://github.com/TJC-Tools/TJC.VersionExtensions?category=code)
 [![License](https://img.shields.io/github/license/TJC-Tools/TJC.VersionExtensions.svg)](LICENSE)
 
-[![tests](https://github.com/TJC-Tools/TJC.VersionExtensions/actions/workflows/ct-matrix.yml/badge.svg)](https://github.com/TJC-Tools/TJC.VersionExtensions/actions/workflows/ct-matrix.yml)
+[![Testing Matrix](https://github.com/TJC-Tools/TJC.VersionExtensions/actions/workflows/ct-matrix.yml/badge.svg)](https://github.com/TJC-Tools/TJC.VersionExtensions/actions/workflows/ct-matrix.yml)
+[![MegaLinter](https://github.com/TJC-Tools/TJC.VersionExtensions/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/TJC-Tools/TJC.VersionExtensions/actions/workflows/mega-linter.yml)
 [![codecov](https://codecov.io/gh/TJC-Tools/TJC.VersionExtensions/graph/badge.svg?token=9XBQBZ5LNG)](https://codecov.io/gh/TJC-Tools/TJC.VersionExtensions)
+
+[![BuyMeACoffee](https://raw.githubusercontent.com/pachadotdev/buymeacoffee-badges/main/bmc-yellow.svg)](https://buymeacoffee.com/tylercarrol)
 
 ## Documentation
 - [Changelog](CHANGELOG.md)
