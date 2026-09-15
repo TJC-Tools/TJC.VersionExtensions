@@ -1,1 +1,1 @@
-﻿global using TJC.VersionExtensions.Enums;
+global using TJC.VersionExtensions.Enums;

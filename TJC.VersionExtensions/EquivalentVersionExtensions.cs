@@ -1,4 +1,4 @@
-﻿namespace TJC.VersionExtensions;
+namespace TJC.VersionExtensions;
 
 public static class EquivalentVersionExtensions
 {

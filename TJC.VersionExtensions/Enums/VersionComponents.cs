@@ -1,4 +1,4 @@
-﻿namespace TJC.VersionExtensions.Enums;
+namespace TJC.VersionExtensions.Enums;
 
 public enum VersionComponents
 {

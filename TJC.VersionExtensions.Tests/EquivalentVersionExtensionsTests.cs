@@ -1,11 +1,11 @@
-﻿namespace TJC.VersionExtensions.Tests;
+namespace TJC.VersionExtensions.Tests;
 
-[TestClass]
+
 public class EquivalentVersionExtensionsTests
 {
     #region Equivalent (True)
 
-    [TestMethod]
+    [Fact]
     public void Equivalent_AllDefinedSame_ReturnsTrue()
     {
         var version1 = new Version(1, 2, 3, 4);
@@ -13,10 +13,10 @@ public class EquivalentVersionExtensionsTests
 
         var result = version1.Equivalent(version2);
 
-        Assert.IsTrue(result);
+        Assert.True(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void Equivalent_MajorMinorBuildDefined_ReturnsTrue()
     {
         var version1 = new Version(1, 2, 3);
@@ -24,10 +24,10 @@ public class EquivalentVersionExtensionsTests
 
         var result = version1.Equivalent(version2);
 
-        Assert.IsTrue(result);
+        Assert.True(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void Equivalent_MajorMinorDefined_ReturnsTrue()
     {
         var version1 = new Version(1, 2);
@@ -35,10 +35,10 @@ public class EquivalentVersionExtensionsTests
 
         var result = version1.Equivalent(version2);
 
-        Assert.IsTrue(result);
+        Assert.True(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void Equivalent_NoneDefined_ReturnsTrue()
     {
         var version1 = new Version();
@@ -46,10 +46,10 @@ public class EquivalentVersionExtensionsTests
 
         var result = version1.Equivalent(version2);
 
-        Assert.IsTrue(result);
+        Assert.True(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void Equivalent_UndefinedComponentOnSecondVersion_ReturnsTrue()
     {
         var version1 = new Version(1, 2, 0, 0);
@@ -57,14 +57,14 @@ public class EquivalentVersionExtensionsTests
 
         var result = version1.Equivalent(version2);
 
-        Assert.IsTrue(result);
+        Assert.True(result);
     }
 
     #endregion
 
     #region Equivalent (False)
 
-    [TestMethod]
+    [Fact]
     public void Equivalent_DifferentMajors_ReturnsFalse()
     {
         var version1 = new Version(1, 0, 0, 0);
@@ -72,10 +72,10 @@ public class EquivalentVersionExtensionsTests
 
         var result = version1.Equivalent(version2);
 
-        Assert.IsFalse(result);
+        Assert.False(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void Equivalent_DifferentMinors_ReturnsFalse()
     {
         var version1 = new Version(1, 2, 0, 0);
@@ -83,10 +83,10 @@ public class EquivalentVersionExtensionsTests
 
         var result = version1.Equivalent(version2);
 
-        Assert.IsFalse(result);
+        Assert.False(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void Equivalent_DifferentBuilds_ReturnsFalse()
     {
         var version1 = new Version(1, 2, 3, 0);
@@ -94,10 +94,10 @@ public class EquivalentVersionExtensionsTests
 
         var result = version1.Equivalent(version2);
 
-        Assert.IsFalse(result);
+        Assert.False(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void Equivalent_DifferentRevisions_ReturnsFalse()
     {
         var version1 = new Version(1, 2, 3, 4);
@@ -105,7 +105,7 @@ public class EquivalentVersionExtensionsTests
 
         var result = version1.Equivalent(version2);
 
-        Assert.IsFalse(result);
+        Assert.False(result);
     }
 
     #endregion
@@ -113,44 +113,44 @@ public class EquivalentVersionExtensionsTests
     #region Is Zero
 
 
-    [TestMethod]
+    [Fact]
     public void IsZero_NoneDefined_ReturnsTrue()
     {
         var version = new Version();
 
         var result = version.IsZero();
 
-        Assert.IsTrue(result);
+        Assert.True(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void IsZero_MajorMinorDefined_ReturnsTrue()
     {
         var version = new Version(0, 0);
 
         var result = version.IsZero();
 
-        Assert.IsTrue(result);
+        Assert.True(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void IsZero_AllDefined_ReturnsTrue()
     {
         var version = new Version(0, 0, 0, 0);
 
         var result = version.IsZero();
 
-        Assert.IsTrue(result);
+        Assert.True(result);
     }
 
-    [TestMethod]
+    [Fact]
     public void IsZero_NonZeroVersion_ReturnsFalse()
     {
         var version = new Version(0, 1, 0, 0);
 
         var result = version.IsZero();
 
-        Assert.IsFalse(result);
+        Assert.False(result);
     }
 
     #endregion
