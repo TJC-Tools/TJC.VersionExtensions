@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-09-15
+
 ### Changed
 
 - Updated to .NET 10
@@ -55,11 +57,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Create many extensions
 
-[Unreleased]: https://github.com/TJC-Tools/TJC.VersionExtensions/compare/v0.4.10...HEAD
+[Unreleased]: https://github.com/TJC-Tools/TJC.VersionExtensions/compare/v0.5.0...HEAD
+
+[0.5.0]: https://github.com/TJC-Tools/TJC.VersionExtensions/compare/v0.4.10...v0.5.0
 
 [0.4.10]: https://github.com/TJC-Tools/TJC.VersionExtensions/compare/v0.4.9...v0.4.10
 
-[0.4.9]: https://github.com/TJC-Tools/TJC.VersionExtensions/compare/v0.4.8...v0.4.9
+[0.4.9]: https://github.com/TJC-Tools/TJC.VersionExtensions/compare/v0.4.3...v0.4.9
 
 [0.4.3]: https://github.com/TJC-Tools/TJC.VersionExtensions/compare/v0.4.2...v0.4.3
 
